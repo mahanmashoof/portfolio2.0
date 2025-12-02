@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ProjectCard from "./components/ProjectCard";
 
 export default function Home() {
   return (
@@ -25,75 +26,43 @@ export default function Home() {
 
         {/* Featured Project */}
         <section className="max-w-5xl mx-auto px-6 py-16">
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden border border-slate-200/50">
-            {/* Project Image */}
-            <div className="relative w-full aspect-video bg-slate-100">
-              <Image
-                src="/ai-dashboard.gif"
-                alt="AI Data Insights Dashboard"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-
-            {/* Project Info */}
-            <div className="p-8 md:p-10">
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">
-                AI Data Insights Dashboard
-              </h2>
-              <p className="text-lg text-slate-500 mt-2 mb-6 leading-relaxed">
-                Analyze and visualize csv data with AI-powered insights and
-                interactive charts
-              </p>
-
-              {/* Buttons */}
-              <div className="flex flex-wrap gap-4 mb-8">
-                <a
-                  href="https://ai-mini-nine.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 bg-slate-900 text-white rounded-lg font-medium hover:bg-slate-800 transition-colors"
-                >
-                  Live Demo
-                </a>
-                <a
-                  href="https://github.com/mahanmashoof/ai-mini"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 border-2 border-slate-900 text-slate-900 rounded-lg font-medium hover:bg-slate-50 transition-colors"
-                >
-                  GitHub Repo
-                </a>
-              </div>
-
-              {/* Tech Stack */}
-              <div>
-                <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3">
-                  Tech Stack
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    "Next.js",
-                    "TypeScript",
-                    "Vite",
-                    "Recharts",
-                    "PapaParse",
-                    "Vercel Functions",
-                    "Secure API Proxy",
-                    "OpenAI API",
-                  ].map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-3 py-1.5 bg-slate-100 text-slate-700 rounded-md text-sm font-medium"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
+          <ProjectCard
+            title="AI Data Insights Dashboard"
+            description="Analyze and visualize csv data with AI-powered insights and interactive charts"
+            imageSrc="/ai-dashboard.gif"
+            imageAlt="AI Data Insights Dashboard"
+            liveUrl="https://ai-mini-nine.vercel.app/"
+            githubFrontendUrl="https://github.com/mahanmashoof/ai-mini"
+            techStack={[
+              "Next.js",
+              "TypeScript",
+              "Vite",
+              "Recharts",
+              "PapaParse",
+              "Vercel Functions",
+              "Secure API Proxy",
+              "OpenAI API",
+              "Tailwind CSS",
+            ]}
+          />
+          <ProjectCard
+            title="AI Recipe Generator"
+            description="Use AI to generate personalized recipes based on ingredients you have at home"
+            imageSrc="/recipe-gen.gif"
+            imageAlt="AI Recipe Generator"
+            liveUrl="https://recipe-generator-fe.vercel.app/"
+            githubFrontendUrl="https://github.com/mahanmashoof/recipe-generator-fe"
+            githubBackendUrl="https://github.com/mahanmashoof/recipe-generator"
+            techStack={[
+              "React.js",
+              "TypeScript",
+              "Vite",
+              "Spring Boot",
+              "REST API",
+              "Tailwind CSS",
+              "OpenAI API",
+            ]}
+          />
         </section>
 
         {/* About Section */}
