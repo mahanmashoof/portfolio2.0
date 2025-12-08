@@ -24,7 +24,7 @@ export default function Home() {
           </p>
         </section>
 
-        {/* Featured Project */}
+        {/* Featured Projects */}
         <section className="max-w-5xl mx-auto px-6 py-16">
           <ProjectCard
             title="AI Data Insights Dashboard"
