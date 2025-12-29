@@ -17,7 +17,13 @@ export default function Home() {
         {/* Hero Section */}
         <section className="max-w-5xl mx-auto px-6 pt-20 pb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-4 tracking-tight">
-            i am <span className="text-green-400">mahan</span>
+            i am{" "}
+            <a
+              href="#about"
+              className="text-green-400 hover:text-green-500 transition-colors cursor-pointer"
+            >
+              mahan
+            </a>
           </h1>
           <p className="text-2xl md:text-3xl text-slate-600 mb-2">
             Software development + AI integrated experiences
@@ -66,7 +72,10 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section className="max-w-5xl mx-auto px-6 py-16">
+        <section
+          id="about"
+          className="max-w-5xl mx-auto px-6 py-16 scroll-mt-8"
+        >
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8 md:p-10 border border-slate-200/50">
             <div className="flex flex-col md:flex-row gap-8 items-start">
               {/* Profile Photo - discreet and elegant */}
