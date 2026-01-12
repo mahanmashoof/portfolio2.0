@@ -69,6 +69,24 @@ export default function Home() {
               "OpenAI API",
             ]}
           />
+          <ProjectCard
+            title="RAG CV Finder"
+            description="Semantic search over CVs with grounded answers and confidence scores"
+            imageSrc="/rag-cv-demo.gif"
+            imageAlt="CV finder demo"
+            liveUrl="https://rag-cv-demo.vercel.app/"
+            githubFrontendUrl="https://github.com/mahanmashoof/rag-cv-demo/tree/main/FE"
+            githubBackendUrl="https://github.com/mahanmashoof/rag-cv-demo/tree/main/BE"
+            techStack={[
+              "Python",
+              "FastAPI",
+              "ChromaDB",
+              "React.js",
+              "Vite",
+              "TypeScript",
+              "OpenAI API",
+            ]}
+          />
         </section>
 
         {/* About Section */}

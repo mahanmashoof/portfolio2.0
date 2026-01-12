@@ -31,6 +31,7 @@ export default function ProjectCard({
           fill
           className="object-contain"
           priority
+          unoptimized
         />
       </div>
 
