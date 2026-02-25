@@ -87,6 +87,22 @@ export default function Home() {
               "OpenAI API",
             ]}
           />
+          <ProjectCard
+            title="AI Document Q&A with RAG"
+            description="Full-stack application using vector embeddings and LLMs for semantic document search"
+            imageSrc="/doc-qa-demo.gif"
+            imageAlt="Document Q&A demo"
+            liveUrl="https://doc-qa-app.vercel.app/"
+            githubFrontendUrl="https://github.com/mahanmashoof/doc-qa-app"
+            techStack={[
+              "Next.js",
+              "TypeScript",
+              "OpenAI",
+              "Claude",
+              "Supabase",
+              "pgvector",
+            ]}
+          />
         </section>
 
         {/* About Section */}
