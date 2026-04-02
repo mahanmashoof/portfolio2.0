@@ -103,6 +103,24 @@ export default function Home() {
               "pgvector",
             ]}
           />
+          <ProjectCard
+            title="RepairMind - Fix broken items with AI"
+            description="Pure .NET backend that receives user inputs about broken items and uses AI to generate repair instructions."
+            imageSrc="/repair.png"
+            imageAlt="repair-icon"
+            liveUrl="https://repairmind.onrender.com/swagger/index.html"
+            githubBackendUrl="https://github.com/mahanmashoof/repairmind"
+            techStack={[
+              ".NET 10",
+              "C#",
+              "OpenAI",
+              "MediatR",
+              "ASP.NET Core Web Authentication",
+              "Sqlite",
+              "Docker",
+              "Swagger",
+            ]}
+          />
         </section>
 
         {/* About Section */}
@@ -139,7 +157,10 @@ export default function Home() {
                     systems, trying to solve everyday problems.
                   </p>
                   <p>
-                    When I'm not coding, I'm spending my time with my family.
+                    When I'm not coding, I'm spending my time with my family,
+                    building stuff with my hands, or doing sports. I have a
+                    passion for learning and creating, and I'm always excited to
+                    take on new challenges and expand my skill set.
                   </p>
                 </div>
               </div>
